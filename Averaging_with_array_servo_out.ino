@@ -1,6 +1,6 @@
 #include <Servo.h>
 Servo servoMain; // Define Servo
-
+//git TEST
 const  int  xIn = 2;                  //set pin to read Xaxis accelerometer
 const  int  yIn = 4;                  //set pin to read Yaxis accelerometer
 const  int  LED = 13;                 //set pin to LED flag
