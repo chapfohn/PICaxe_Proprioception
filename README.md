@@ -1,4 +1,4 @@
 Arduino_Proprioception
 ======================
 
-Coding and hardware for an Arduino mediated proprioception board
+Proprioception project implemented on Arduino.
