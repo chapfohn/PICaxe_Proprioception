@@ -1,6 +1,6 @@
 #include <Servo.h>
 Servo servoMain; // Define Servo
-//git TEST test
+
 const  int  xIn = 2;                  //set pin to read Xaxis accelerometer
 const  int  yIn = 4;                  //set pin to read Yaxis accelerometer
 const  int  LED = 13;                 //set pin to LED flag
@@ -12,8 +12,8 @@ int         angle = 0;
 
 void setup() {
   Serial.begin(9600);                      //set baud rate for serial communication with Serial Monitor (debug)
-  //servoMain.attach(10);                    //identify pin to servo
-  //servoMain.write(0);                      //initialise servo to 0c
+  servoMain.attach(10);                    //identify pin to servo
+  servoMain.write(0);                      //initialise servo to 0c
   delay(20);                               //pause to allow servo initialisation
 }
 
@@ -61,7 +61,7 @@ void loop() {
       delay (1000);
       digitalWrite(LED, 0);
       delay(20);
-      //angle = angle + 15;                //increment servo
+      angle = angle + 15;                //increment servo
       score = 0;                           //reset score
     }
   }
